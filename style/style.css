@@ -7,17 +7,14 @@ font-family: 'Lobster', cursive;*/
 
 body {	background: #f2f2f2; user-select: none;	}
 
-#main {  max-width: 500px;	margin: 0 auto; 
-padding-top: 50px;
-
-}
+#main {  max-width: 500px;	margin: 0 auto; padding-top: 50px;  }
 
 button {  cursor: pointer;  }
 
 header {
 	text-align: center;
 	font-weight: bold;
-	font-size: 25px;
+	font-size: 28px;
 	font-family: 'Lobster', cursive;
 	letter-spacing: 2px;
 	padding: 10px;
