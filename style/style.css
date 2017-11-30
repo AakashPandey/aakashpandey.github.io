@@ -7,14 +7,12 @@ font-family: 'Lobster', cursive;*/
 
 html {
     min-height: 100%;
-  position:relative; 
-
-
+  	position:relative; 
 }
 
 body { background: #f2f2f2; user-select: none;	}
 
-#main { margin: 0 auto; padding-top: 50px;  }
+#main { margin: 0 auto; padding-top: 50px; overflow: auto; height: 100%; padding-bottom:100px}
 
 button {  cursor: pointer;  }
 
@@ -78,12 +76,7 @@ header {
 	margin-bottom: 20px;
 }
 
-#content {
-	margin-bottom: 40px;
-	font-family: 'Josefin Sans', sans-serif;
-	font-size: 18px;
 
-}
 
 footer {
 	text-align: center;
@@ -125,34 +118,37 @@ footer {
 	/*background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;		*/	
-
 	color: #fff;
-	padding: 20px;
+	padding: 50px 20px 50px 20px;
 	font-family: open-sans;
 	
-	font-size: 110%;
 
 	text-align: center;
 	/*background: linear-gradient(to bottom right, #1DE9B6, #3D5AFE);*/
-background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
 	background-size: 400% 400%;
-	animation: wall 100s ease infinite;
+	animation: wall 250s ease infinite;
 
 
 
+}
+
+#x {
+	margin: 30px;
 }
 
 @keyframes wall {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
-}
-#wh {
-	font-size: 150%;
+	0% {background-position: 0% 50%}
+	50% {background-position: 100% 50%}
+	100% {background-position: 0% 50%}}
+
+
+
+#content {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 18px;
+	padding: 50px;
+	max-width: 600px;
+	margin: 0 auto;
+	text-align: center;
 }
