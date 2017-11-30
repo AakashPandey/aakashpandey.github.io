@@ -49,6 +49,11 @@ header {
 	transform: rotate(90deg);
 }
 
+#temp {
+	/*transform: rotate(-45deg);*/
+	margin-top: 200px;
+	padding: 20px;
+}
 
 #drop {                      /* Nav Div */
 	display: none;
@@ -213,6 +218,14 @@ footer {
 		margin: 10px 0px 10px 0px;
 
     }
+
+    #temp {
+		/*transform: rotate(-45deg);*/
+		margin-top: 150px;
+		/*margin-left: 30px;*/
+
+	}
+	
    
 }
 
