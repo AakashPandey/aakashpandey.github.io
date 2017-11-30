@@ -127,7 +127,7 @@ footer {
 	/*background: linear-gradient(to bottom right, #1DE9B6, #3D5AFE);*/
 	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
 	background-size: 400% 400%;
-	animation: wall 350s ease infinite;
+	animation: wall 280s ease infinite;
 
 
 }
@@ -183,7 +183,6 @@ footer {
 	background: linear-gradient(-45deg, #23A6D5, #23D5AB);
 	display: inline-block;
 	margin-right: 5px;
-	font-size: 80%;
 	margin: 10px 0px 10px 0px;
 
 	
@@ -196,7 +195,6 @@ footer {
 	background: linear-gradient(-45deg, #E73C7E, #EE7752);
 	margin-right: 5px;
 	margin: 10px 0px 10px 0px;
-	font-size: 80%;
 	display: inline-block;
 }
 	
