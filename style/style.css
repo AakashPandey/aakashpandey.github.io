@@ -134,7 +134,7 @@ footer {
 }
 
 #x {
-	margin: 30px;
+	margin: 5px;
 }
 
 @keyframes wall {
@@ -151,4 +151,9 @@ footer {
 	max-width: 600px;
 	margin: 0 auto;
 	text-align: center;
+}
+
+#logo {
+	width: 105px;
+	border-radius: 50%;
 }
