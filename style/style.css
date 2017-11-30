@@ -5,9 +5,9 @@ font-family: 'Lobster', cursive;*/
 * { border: none; margin: 0; padding: 0; }
 *:focus {outline: none;}
 
-body {	background: #f2f2f2; user-select: none;	}
+body { background: #f2f2f2; user-select: none;	}
 
-#main {  max-width: 500px;	margin: 0 auto; padding-top: 50px;  }
+#main { max-width: 800px; margin: 0 auto; padding-top: 50px;  }
 
 button {  cursor: pointer;  }
 
@@ -24,6 +24,7 @@ header {
 	top: 0;
 	width: 100%;
 	margin-left: -12px;
+	z-index: 2;
 }
 
 .nav {                      /* Nav Button */
@@ -53,7 +54,7 @@ header {
 	z-index: 1;
 	left: 0;
 	top: 15;
-	opacity: 1;
+	opacity: 0.8;
 	background: #efefef;
 }
 
@@ -71,7 +72,6 @@ header {
 }
 
 #content {
-	padding: 20px;
 	text-align: center;
 	margin-bottom: 40px;
 	font-family: 'Josefin Sans', sans-serif;
@@ -101,4 +101,29 @@ footer {
 	color: #7f7f7f;
 	margin-right: 25px;
 	margin-left: 29px;
+}
+
+#ihome {
+	display: block;
+    margin: auto;
+    width: 100%;
+}
+
+.msg {
+	opacity: 0.8;
+	background: #fff;
+	border-radius: 20px;
+	color: #212121;
+	padding: 20px;
+	font-family: serif;
+    position: absolute;
+    /*top: 40%;*/
+    left: 50%;
+    top: 33%;
+    transform: translate(-50%, -50%);
+
+}
+
+#wh {
+	font-size: 150%;
 }
