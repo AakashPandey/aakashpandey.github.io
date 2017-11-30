@@ -120,7 +120,7 @@ footer {
 	background-size: cover;		*/	
 	color: #fff;
 	padding: 50px 20px 50px 20px;
-	font-family: open-sans;
+	font-family: Inconsolata;
 	
 
 	text-align: center;
@@ -128,7 +128,6 @@ footer {
 	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
 	background-size: 400% 400%;
 	animation: wall 250s ease infinite;
-
 
 
 }
@@ -156,4 +155,5 @@ footer {
 #logo {
 	width: 105px;
 	border-radius: 50%;
+	margin-left: 8px;
 }
