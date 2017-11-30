@@ -5,9 +5,16 @@ font-family: 'Lobster', cursive;*/
 * { border: none; margin: 0; padding: 0; }
 *:focus {outline: none;}
 
+html {
+    min-height: 100%;
+  position:relative; 
+
+
+}
+
 body { background: #f2f2f2; user-select: none;	}
 
-#main { max-width: 800px; margin: 0 auto; padding-top: 50px;  }
+#main { margin: 0 auto; padding-top: 50px;  }
 
 button {  cursor: pointer;  }
 
@@ -54,7 +61,7 @@ header {
 	z-index: 1;
 	left: 0;
 	top: 15;
-	opacity: 0.8;
+	opacity: 1;
 	background: #efefef;
 }
 
@@ -72,7 +79,6 @@ header {
 }
 
 #content {
-	text-align: center;
 	margin-bottom: 40px;
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 18px;
@@ -93,6 +99,11 @@ footer {
  	/*left: 0;*/
  	/*margin-left: -12px;*/
  	color: #7f7f7f;
+
+ 	position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .lk{
@@ -109,21 +120,39 @@ footer {
     width: 100%;
 }
 
-.msg {
-	opacity: 0.8;
-	background: #fff;
-	border-radius: 20px;
-	color: #212121;
+.wallz {
+	/*background-image: url("../images/wall.jpg") ;*/
+	/*background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;		*/	
+
+	color: #fff;
 	padding: 20px;
-	font-family: serif;
-    position: absolute;
-    /*top: 40%;*/
-    left: 50%;
-    top: 33%;
-    transform: translate(-50%, -50%);
+	font-family: open-sans;
+	
+	font-size: 110%;
+
+	text-align: center;
+	/*background: linear-gradient(to bottom right, #1DE9B6, #3D5AFE);*/
+background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	animation: wall 100s ease infinite;
+
+
 
 }
 
+@keyframes wall {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
 #wh {
 	font-size: 150%;
 }
