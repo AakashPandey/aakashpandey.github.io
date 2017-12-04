@@ -1,6 +1,7 @@
 var nv=0, nick="", nRID="", mcol="", sk="";
 $.ajaxSetup({xhrFields: {withCredentials: true}});
 var sph = () => {	window.scrollTo(0, 10000); }
+$('body').keydown(function(event) { var x = event.which; if (x==13) { send();} });
 
 var rez = () => { sz=$("#mainAct").width();$("#inp").width(sz-70); if ($(window).width() < 900) $("#inp").width(sz-110); }
 $(window).resize(function () { rez()});

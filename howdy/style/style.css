@@ -206,6 +206,8 @@ header {
   padding: 10px 20px 10px 20px;
   margin-bottom: 25px;  	
   white-space: pre-line;    
+  word-wrap: break-word;
+
 
 }
 
@@ -220,6 +222,8 @@ header {
   padding: 10px;
   margin-left: 20%;
   margin-bottom: 25px; 
+  word-wrap: break-word;
+
 }
 
 .cc62828 {background: #c62828;} .c2E7D32 {background: #2E7D32;}
