@@ -167,13 +167,14 @@ footer {
 	background: #fafafa;
 	border: solid 1px #efefef;
 	color: #171717;
-	border-radius: 30px;
+	/*border-radius: 30px;*/
 	padding: 20px 10px 20px 10px;
 	overflow: auto;
 	font-family: Inconsolata;
 	font-weight: lighter;
 	font-size: 90%;
 	line-height: 25px;
+	/*box-shadow: 10px 10px 5px grey;*/
 
 
 }

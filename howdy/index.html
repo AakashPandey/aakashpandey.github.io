@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- 
+    ___         __              __       ____                  __          
+   /   | ____ _/ /______ ______/ /_     / __ \____ _____  ____/ /__  __  __
+  / /| |/ __ `/ //_/ __ `/ ___/ __ \   / /_/ / __ `/ __ \/ __  / _ \/ / / /
+ / ___ / /_/ / ,< / /_/ (__  ) / / /  / ____/ /_/ / / / / /_/ /  __/ /_/ / 
+/_/  |_\__,_/_/|_|\__,_/____/_/ /_/  /_/    \__,_/_/ /_/\__,_/\___/\__, /  
+                                                                  /____/   
+ 
+ -->
+
+ 	<title>Howdy</title>
+ 	<link rel="icon" type="image/png" href="images/a.png">
+ 	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link rel="stylesheet" type="text/css" href="style/w3.css">
+	<link rel="stylesheet" type="text/css" href="style/sttle.css">
+
+
+ 	<script type="text/javascript" src="script/jq.js"></script>
+ 	<meta charset="UTF-8">
+ 	<meta name="theme-color" content="#fff"/>
+    <meta name="description" content="Say Howdy, Fast & Easy Group Chat by Aakash Pandey">
+    <script type="text/javascript" src="script/temp.js"></script>
+    <meta name="keywords" content="'Aakash Pandey', 'howdy'">
+	<meta name="viewport" content="width=device-width, initial-scale=1" user-scalable="no">
+	
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110601174-1"></script>
+	<script>window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());gtag('config', 'UA-110601174-1');
+	</script>
+
+	<link rel='stylesheet' type='text/css' href='style/fa/css/fa.css'>
+	
+	<link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+
+
+</head>
+
+<noscript>
+    <div>Please consider re-enabling JavaScript or updating your browser.</div>
+</noscript>
+
+<body>
+	<header><button id="nav" class="nav"><i class="fa fa-circle-o" aria-hidden="true"></i>
+	</button>Howdy</header>
+	<div id="side">
+		<h3>Users Online</h3> 
+		<div id="olist">
+			<div id="you">Aakash</div>
+		</div>
+		<button id="refh" onclick="reqp()"><i class="fa fa-refresh" aria-hidden="true"></i>
+ Refresh</button>
+
+		<div id="rcode">Room Code<br>
+			<input type="text" id="rcc" val="" readonly>
+		</div>
+
+		<div id="off"><h4>Created by Aakash Pandey</h4>
+		<div id="zzz">
+			<a href="mailto:aakash.pandey@live.com?Subject=Hi" class="lk"><i class="fa fa-inbox" aria-hidden="true"></i></a>
+			<a href="https://github.com/aakashpandey" class="lk"><i class="fa fa-github" aria-hidden="true"></i></a>
+			<a href="https://instagram.com/aakashpandey1001" class="lk"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+			<a href="https://twitter.com/Aakash_1001" class="lk"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+			<br><br><br>
+		</div>
+
+		</div>
+	</div>
+
+	<div id="main">
+
+		<div id="inAct">
+			<img src="images/howdy.gif" id="howdy"><br>
+			<input type="text" id="nick" placeholder="Enter a nick" autocomplete="off"><br>
+			<button onclick="act(1)" class="c62828">Continue</button>
+		</div>
+
+		<div id="preAct">
+			<div id="cr">
+				<h3>Create Room</h3>
+				<input type="text" id="nroom" autocomplete="off" placeholder="Enter Room ID (min 7 Al-Nu)" autocapitalize="none">
+				<button onclick="randr();">Random</button><br>
+				<button id="crea" onclick="act(2)">Create</button>
+			</div>
+			<div class="gap">Or</div>
+			<div id="jr">
+				<h3>Join Room</h3>
+				<input type="text" id="room" autocomplete="off" placeholder="Enter Room ID" autocapitalize="none">
+				<br>
+				<button id="join" onclick="act(3)">Join</button>
+			</div>
+		</div>
+
+		<div id="mainAct">
+		
+			<div id="disp">
+
+				
+			</div>	
+			
+			<div id="inpar">
+				<input type="text" id="inp" autocomplete="off"><button id="subm" onclick="send()"><i class="fa fa-play" aria-hidden="true"></i></button>
+			</div>
+
+		</div>
+		
+		
+	</div>
+
+
+
+	
+
+<script type="text/javascript" src="script/script.js"></script>
+
+</body>
+</html>
