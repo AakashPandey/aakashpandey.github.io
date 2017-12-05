@@ -143,7 +143,7 @@ header {
   position: relative;
   bottom: -5px;
   border-radius: 10px;
-  background: #fff;   
+  background: #fff;
 }
 
 #inp:focus {
@@ -205,8 +205,8 @@ header {
   margin-top: -1px;
   border-radius: 25px;
   padding: 10px 20px 10px 20px;
-  margin-bottom: 25px;  	
-  white-space: pre-line;    
+  margin-bottom: 25px;
+  white-space: pre-line;
   word-wrap: break-word;
 
 
@@ -220,9 +220,9 @@ header {
   color: #fff;
   font-size: 90%;
   border-radius: 25px;
-  padding: 10px;
+	padding: 10px 20px 10px 20px;
   margin-left: 20%;
-  margin-bottom: 25px; 
+  margin-bottom: 25px;
   word-wrap: break-word;
 
 }
@@ -261,7 +261,7 @@ header {
 	overflow: auto;
 	padding-right: 1px;
 	line-height: 25px;
-    white-space: pre-line;    
+    white-space: pre-line;
 
 }
 
@@ -310,7 +310,7 @@ header {
 }
 
 @media only screen and (max-width: 700px) {
-    
+
     .gap {
 		margin-bottom: 30px;
 		margin-top: 30px;
@@ -336,5 +336,5 @@ header {
 	#rcode {
 		margin-top: 20px;
 	}
-	
+
 }
