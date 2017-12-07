@@ -7,7 +7,7 @@ font-family: 'Lobster', cursive;*/
 
 html {
     min-height: 100%;
-  	position:relative; 
+  	position:relative;
 }
 
 body { background: #f2f2f2; user-select: none;	}
@@ -66,6 +66,7 @@ header {
 	top: 15;
 	opacity: 1;
 	background: #efefef;
+  
 }
 
 #dhead {                   /* Nav head */
@@ -73,7 +74,7 @@ header {
 	text-align: center;
 	color: #7f7f7f;
 	font-size: 15px;
-	font-family: 'Arimo', sans-serif; 
+	font-family: 'Arimo', sans-serif;
 	letter-spacing: 2px;
 	padding: 10px;
 	/*border-top: 1px solid #efefef ;*/
@@ -122,7 +123,7 @@ footer {
 	/*background-image: url("../images/wall.jpg") ;*/
 	/*background-repeat: no-repeat;
 	background-position: center;
-	background-size: cover;		*/	
+	background-size: cover;		*/
 	color: #fff;
 	padding: 85px 20px 85px 20px;
 	font-family: open sans;
@@ -204,7 +205,7 @@ footer {
 .tag2{
 	background: linear-gradient(-45deg, #E73C7E, #EE7752);
 }
-	
+
 
 .gap {
 	margin-bottom: 40px;
@@ -214,7 +215,7 @@ footer {
 }
 
 @media only screen and (max-width: 700px) {
-    
+
     .tag, .tag2 {
 		margin: 10px 0px 10px 0px;
 
@@ -226,8 +227,8 @@ footer {
 		/*margin-left: 30px;*/
 
 	}
-	
-   
+
+
 }
 
 .w3-light-grey {
