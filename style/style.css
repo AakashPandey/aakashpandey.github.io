@@ -66,7 +66,7 @@ header {
 	top: 15;
 	opacity: 1;
 	background: #efefef;
-  
+
 }
 
 #dhead {                   /* Nav head */
@@ -129,7 +129,7 @@ footer {
 	font-family: open sans;
 	text-align: center;
 	/*background: linear-gradient(to bottom right, #1DE9B6, #3D5AFE);*/
-	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background: linear-gradient(45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
 	background-size: 400% 400%;
 	animation: wall 280s ease infinite;
 
