@@ -129,7 +129,7 @@ footer {
 	font-family: open sans;
 	text-align: center;
 	/*background: linear-gradient(to bottom right, #1DE9B6, #3D5AFE);*/
-	background: linear-gradient(45deg,#1DE9B6,#0091EA,#E91E63,#f44336,#e53935);
+	background: linear-gradient(-240deg,#1DE9B6,#0091EA,#E91E63,#f44336,#e53935);
 	background-size: 400% 400%;
 	animation: wall 490s ease infinite;
 
