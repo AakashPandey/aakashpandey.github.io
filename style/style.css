@@ -33,9 +33,9 @@ header {
 }
 
 .nav {                      /* Nav Button */
- 	position: absolute;
-	top: 12px;
-	left: 12px;
+   	position: absolute;
+  	top: 12px;
+  	left: 12px;
   	border: none;
   	background: #fff;
   	color: #4c4c4c;
@@ -129,9 +129,9 @@ footer {
 	font-family: open sans;
 	text-align: center;
 	/*background: linear-gradient(to bottom right, #1DE9B6, #3D5AFE);*/
-	background: linear-gradient(45deg,#23A6D5,#23A6D5,#E73C7E,#EE7752);
+	background: linear-gradient(45deg,#0091EA,#1DE9B6,#0091EA,#E91E63,#f44336,#e53935);
 	background-size: 400% 400%;
-	animation: wall 280s ease infinite;
+	animation: wall 490s ease infinite;
 
 
 }
