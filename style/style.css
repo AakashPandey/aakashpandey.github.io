@@ -25,7 +25,7 @@ header {
 	padding: 10px;
 	background: #fff;
 	color: #7f7f7f;
-    position: fixed;
+        position: fixed;
 	top: 0;
 	width: 100%;
 	/*margin-left: -12px;*/
@@ -100,9 +100,9 @@ footer {
  	color: #7f7f7f;
 
  	position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
 }
 
 .lk{
@@ -115,8 +115,8 @@ footer {
 
 #ihome {
 	display: block;
-    margin: auto;
-    width: 100%;
+	margin: auto;
+	width: 100%;
 }
 
 .wallz {
@@ -129,7 +129,7 @@ footer {
 	font-family: open sans;
 	text-align: center;
 	/*background: linear-gradient(to bottom right, #1DE9B6, #3D5AFE);*/
-	background: linear-gradient(45deg,#0091EA,#1DE9B6,#0091EA,#E91E63,#f44336,#e53935);
+	background: linear-gradient(45deg,#1DE9B6,#0091EA,#E91E63,#f44336,#e53935);
 	background-size: 400% 400%;
 	animation: wall 490s ease infinite;
 
