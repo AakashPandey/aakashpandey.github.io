@@ -132,6 +132,9 @@ var reqp = () => {
 
 var send = () => {
 	var msg = $("#inp").val();
+	if(msg === '' || msg===' ') {	
+          return;
+	}
 	$("#inp").val(null);
 	var tmp = eval(rbt).text(msg);
 	tmp.addClass(mcol);
