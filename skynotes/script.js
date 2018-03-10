@@ -16,7 +16,7 @@ var init = () => {
 
 var act=(n) => {
 	if (n===0) {
-		history.pushState({path: 'root'}, "Read notes", "/");	
+		history.pushState({path: 'root'}, "Read notes", "skynotes");	
 	} else if (n===1) {
 		history.pushState({path: 'write'}, "Create new notes", "write");
 	} else if (n===2) {
@@ -29,7 +29,7 @@ var act=(n) => {
 }
 
 var urlScan = () => {
-	if (location.pathname === '/') {
+	if (location.pathname === '/skynotes') {
 		init();
 	} else if (location.pathname === '/write') {
 		E="";
