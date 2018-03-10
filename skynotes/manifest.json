@@ -1,0 +1,17 @@
+{
+  "name": "SkyNotes",
+  "short_name": "SkyNotes",
+  "icons": [{
+    "src": "logo.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    }, {
+      "src": "logo.p",
+      "sizes": "144x144",
+      "type": "image/png"
+    }],
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#fff",
+  "theme_color": "#000"
+}

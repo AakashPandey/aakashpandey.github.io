@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SkyNotes</title>
+	<meta charset="UTF-8">
+ 	<meta name="theme-color" content="#000"/>
+    <meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1" user-scalable="no">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="anim.css">
+	<link href="https://fonts.googleapis.com/css?family=Mina|Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="manifest" href="/manifest.json">
+      <link rel="icon" href="/logo.png">
+
+
+	<script type="text/javascript" src="jq.js"></script>
+</head>
+
+<body>
+	<header>SkyNotes</header>
+
+<div id="main">
+
+	<div id="list"></div>
+
+	
+	<div id="write">
+		<input type="text" id="title" placeholder="Title"><br>
+		<textarea id="note" placeholder="Write something"></textarea><br>
+		<button id="save" onclick="save();"><i class="material-icons">save</i></button><button onclick="rm();" id="rm"><i class="material-icons">delete</i></button>
+	</div>
+
+
+	<div id="view"></div>
+
+	<div id="about">
+		<div id="cont">
+			<img src="a.png"><br>
+			Version 2.0<br>
+			<h2>Created by Aakash Pandey</h2>
+			aakash.pandey@live.com<br><br>
+			© 2018 - All Rights Reserved<br>
+			-----------------------------<br>
+			<button onclick="reset();">Clear &amp; Reset</button> 
+
+		</div>
+	</div>
+
+	<div id="nav">
+		<i class="material-icons ls" onclick="act(0)">import_contacts</i>
+		<i class="material-icons ls" onclick="act(1)">create</i>
+		<i class="material-icons" onclick="act(2)">info</i>
+
+	</div>
+
+
+</div>
+</body>
+<script type="text/javascript" src="script.js"></script>
+
+
+</html>
