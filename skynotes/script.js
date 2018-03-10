@@ -18,11 +18,11 @@ var act=(n) => {
 	if (n===0) {
 		history.pushState({path: 'root'}, "Read notes", "/skynotes");	
 	} else if (n===1) {
-		history.pushState({path: 'write'}, "Create new notes", "write");
+		history.pushState({path: 'write'}, "Create new notes", "/skynotes/write");
 	} else if (n===2) {
-		history.pushState({path: 'about'}, "About SkyNotes", "about");
+		history.pushState({path: 'about'}, "About SkyNotes", "/skynotes/about");
 	} else {
-		history.pushState({path: 'view'}, "Read or edit", "view");
+		history.pushState({path: 'view'}, "Read or edit", "/skynotes/view");
 	}
 
 	urlScan();
@@ -31,18 +31,18 @@ var act=(n) => {
 var urlScan = () => {
 	if (location.pathname === '/skynotes') {
 		init();
-	} else if (location.pathname === '/write') {
+	} else if (location.pathname === '/skynotes/write') {
 		E="";
 		$('#title').val(null);
 		$('#note').val(null);
 		$("#list").hide();
 		$("#about").hide();
 		$("#write").fadeIn();
-	} else if(location.pathname === '/about') {
+	} else if(location.pathname === '/skynotes/about') {
 		$("#list").hide();
 		$("#write").hide();
 		$("#about").fadeIn();
-	} else if(location.pathname === '/view') {
+	} else if(location.pathname === '/skynotes/view') {
 		$("#list").hide();
 		$("#write").fadeIn();
 	}
