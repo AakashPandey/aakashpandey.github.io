@@ -10,7 +10,7 @@
       "sizes": "144x144",
       "type": "image/png"
     }],
-  "start_url": "/client/index.html",
+  "start_url": "index.html",
   "display": "standalone",
   "background_color": "#fff",
   "theme_color": "#E0F7FA"
