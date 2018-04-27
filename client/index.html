@@ -18,6 +18,8 @@
     margin-top: 150px;
     display: block;
     user-select: none;
+    transition: background .35s ease-in-out;
+
   }
 
   img {
@@ -31,6 +33,16 @@
     background: #ef5350;
   }
     
+  #cmd {
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+    height: 150px;
+    width: 90%;
+    background: #efefef;
+    padding: 20px;
+
+  }
    
 
 
@@ -38,20 +50,22 @@
 
   </style>
   <script type="text/javascript" src="jq.js"></script>
+  
 </head>
 <body>
 <div id="main">
   <img src="https://github.com/AakashPandey/aakashpandey.github.io/blob/master/client/mic.png?raw=true">
 </div>
+<div id="cmd"></div>
 
 
 <script type="text/javascript">
 voiceIn = []
 vn = 0;
+
 function listen() {
   window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
   const recognition = new SpeechRecognition();
-
     recognition.interimResults = true;
     recognition.lang = 'en-US';
     recognition.addEventListener('result', e => {
@@ -62,8 +76,9 @@ function listen() {
       
         if (e.results[0].isFinal) {
           voiceIn.push(transcript);
+          $("#main").removeClass('red');
+          $("#cmd").text(voiceIn[vn])
           vn++;
-          after();   
           
         }           
    });
@@ -78,15 +93,14 @@ function say(text) {
   msg.lang = 'en-US'; 
   msg.text = text;
   startOver = true
-  //speechSynthesis.cancel();
   if (startOver) {
       window.speechSynthesis.speak(msg);
     }
 }
 
-function speak() {
-  say("Welcome to Nilgiri Voice order system!");
-  say("Tell me you goodname");
+function speak(txt) {
+
+  say(txt);
   
   setTimeout(function(){
       listen();
@@ -94,23 +108,9 @@ function speak() {
 
 }
 
-function seq() {
-  var ring = new Audio('ring.mp3');
-  ring.play();
-  setTimeout(function(){
-     speak();
-    }, 10200);
-  
-}
-
-function after() {
-  say("Good day Mr." + voiceIn[vn]); 
-  say("Today we are having great offers on Dairy products!");
-}
-
 $("#main").click(function(){
   $("#main").addClass('red');
-  seq();
+  listen();
 
 })
 
