@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SkyGate Client</title>
+  <style type="text/css">
+  body {
+  	background: #fff;
+  	margin: 0;
+  	padding: 0;
+  }
+
+  #main {
+  	width: 120px;
+  	height: 120px;
+  	border-radius: 50%;
+  	margin: auto;
+  	margin-top: 150px;
+  	background: #ef5350;
+    display: block;
+    user-select: none;
+  }
+
+  img {
+    width: 50px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 30px;
+
+  }
+
+
+
+
+  </style>
+  <script type="text/javascript" src="jq.js"></script>
+</head>
+<body>
+<div id="main">
+  <img src="mic.png">
+</div>
+
+
+<script type="text/javascript">
+voiceIn = []
+vn = 0;
+function listen() {
+  window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+  const recognition = new SpeechRecognition();
+
+	  recognition.interimResults = true;
+	  recognition.lang = 'en-US';
+	  recognition.addEventListener('result', e => {
+	    const transcript = Array.from(e.results)
+	      .map(result => result[0])
+	      .map(result => result.transcript)
+	      .join('');
+      
+        if (e.results[0].isFinal) {
+	        voiceIn.push(transcript);
+	        vn++;
+	        after();   
+	        
+	      }           
+   });
+
+   recognition.start();      
+} 
+	
+function say(text) {
+	
+ 	const msg = new SpeechSynthesisUtterance(text);
+ 	voices = window.speechSynthesis.getVoices();
+ 	msg.lang = 'en-US'; 
+	msg.text = text;
+	startOver = true
+	//speechSynthesis.cancel();
+	if (startOver) {
+      window.speechSynthesis.speak(msg);
+    }
+}
+
+function speak() {
+	say("Welcome to Nilgiri Voice order system!");
+	say("Tell me you goodname");
+	
+	setTimeout(function(){
+			listen();
+		}, 6000);
+
+}
+
+function seq() {
+	var ring = new Audio('ring.mp3');
+  ring.play();
+  setTimeout(function(){
+		 speak();
+		}, 10200);
+  
+}
+
+function after() {
+	say("Good day Mr." + voiceIn[vn]); 
+	say("Today we are having great offers on Dairy products!");
+}
+
+$("#main").click(function(){
+	$("#main").css("animation-duration", "2s");
+	$("#ovr").css("animation-duration", "1s");
+	seq();
+
+})
+
+</script>
+</body>
+</html>
