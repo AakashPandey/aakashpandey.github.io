@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UIJS</title>
+	<script type="text/javascript" src="jq.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<header>UIJS</header>
+	
+	<div id="def" class='ui'>
+		<p>Welcome to UIJS</p>
+		<i>Simplicity is the key</i>
+		<br><br>
+		<button onclick="uNav('about');">About</button><br>
+		<button onclick="uNav('howto');">Instructions</button><br>
+		<button onclick="uNav('samp');">Sample</button>
+
+	
+		<h6>Created by: Aakash Pandey</h6>
+	</div>
+
+	<div id="abt" class="ui">
+		UIJS is a simple and lightweight solution for routing pages in single page
+		applications.<br><br>
+		It integrates with jQuery and makes page transitions a breeze. It depends on hashes instead of real paths thus we can easily isolate the client and server.<br><br>
+		This is a lazy approach. I made it because I didn't felt like
+		using Vue or Angular for a simple app.
+	</div>
+
+	<div id="ins" class="ui">
+		The 6 step implementation<br>
+		<ol>
+			<li>Link ui.js file to page</li>
+			<li>Initialize or fetch an object 'Path' which consists of route &amp; div id in pairs (to bind a div to a route)
+			<li>Add 'ui' class to all divs representing a page</li>
+			<li>Add 'display: none' property to ui class in css</li>
+			<li>Use 'uNav(route)' function to switch pages with user events</li>
+			<li>Create a div with id 'e' for 404s</li>
+		</ol><br>
+		Now go ahead ... test / play / integrate<br>
+		PS. You need to have jQuery linked
+	</div>
+
+	<div id="smp" class="ui">
+		This is a sample page which has no purpose!<br><br>
+		BTW try entering 'aakashpandey.github.io/uijs#samp'
+		in a new tab &amp; notice this page being displayed by default.<br>
+		That's what this is all about!<br><br>
+		Also try adding a random string after # 
+		<br><br>
+	</div>
+
+	<div id="e" class="ui">
+		404 Page not found
+	</div>
+</body>
+
+<script type="text/javascript" src="ui.js"></script>
+</html>
