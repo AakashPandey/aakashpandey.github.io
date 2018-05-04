@@ -1,0 +1,57 @@
+* {
+	border: none;
+}
+
+*:focus {
+	outline: none;
+}
+
+
+button, input {
+	padding: 10px;
+	width: 35%;
+	border-radius: 10px;
+	margin-bottom: 15px;
+}
+
+button:hover {
+	background: #efefef;
+}
+
+body {
+	margin: 0;
+	padding: 10px;
+	font-family: monospace;
+	font-size: 130%;
+	max-width: 550px;
+	margin: 0 auto;
+}
+
+
+header {
+	text-align: center;
+	font-weight: bolder;
+	letter-spacing: 2px;
+	font-size: 180%;
+	font-family: monospace;
+	padding: 5px;
+	margin-bottom: 5px;
+}
+
+
+.ui {
+	display: none;
+	/*border: 1px solid #e3e3e3;*/
+	min-height: 380px;
+	line-height: 35px;
+	padding: 45px;
+	overflow: auto;
+	border-radius: 10px;
+}
+
+#def {
+	padding-top: 60px;
+	text-align: center;
+	font-size: 115%;
+	font-weight: lighter;
+}
