@@ -1,4 +1,6 @@
-const vn = "version-v3";
+
+console.log("[UNRELEASED-0.7] SKYROUTES an innovative client side router by Aakash Pandey");
+const vn = "version-07";
 
 var appCash = [
     '/index.html',
