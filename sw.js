@@ -1,20 +1,3 @@
-// LEGACY CODE
-// ------------------------------------
-// self.addEventListener('fetch', function (event) {
-//     console.log(event.request.url);
-//     if (event.request.url.startsWith(location.origin) && (!location.pathname.includes('.'))) {
-//         var r = caches.match(location.origin + '/index.html');
-//         event.respondWith(r);
-//     } else {
-//         if (AppDat.includes("/" + event.request.url.split('/')[3]) || AppDat.includes("/lib/" + event.request.url.split('/')[4])) {
-//             event.respondWith(caches.match(event.request.url));
-//         } else {
-//             console.log("Server Fetch: " + event.request.url);
-//         }
-//     }
-// });
-
-
 // State management
 
 const vn = "version-x4";
@@ -22,10 +5,9 @@ const vn = "version-x4";
 // Files to cache
 var appCash = [
     '/index.html',
-    '/style.css',
+    '/style/style.css',
     '/lib/skyroute.css',
-    '/lib/skyroute.js',
-    '/sw.js'
+    '/lib/skyroute.js'
 ];
 
 // Install & cache
