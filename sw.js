@@ -1,8 +1,5 @@
-// State management
+const vn = "version-v2";
 
-const vn = "version-v1";
-
-// Files to cache
 var appCash = [
     '/index.html',
     '/style/style.css',
@@ -10,7 +7,9 @@ var appCash = [
     '/lib/skyroute.js'
 ];
 
-// Install & cache
+var ign = ["uijs", "howdy", "dissolve", "skynotes"];
+
+
 self.addEventListener('install', (e) => {
     e.waitUntil(
         caches.open(vn).then((cache) => {
@@ -19,7 +18,7 @@ self.addEventListener('install', (e) => {
     );
 });
 
-// Listen for mesg
+
 self.addEventListener('message', (event) => {
     if (event.data.action === 'skipWaiting') {
         self.skipWaiting();
@@ -38,10 +37,10 @@ self.addEventListener('message', (event) => {
     }
 });
 
-// SkyRoute Intercepts
+
 self.addEventListener('fetch', e => {
     const url = new URL(e.request.url);
-    if (url.origin === location.origin && (!url.pathname.includes("."))) {
+    if (url.origin === location.origin && (!url.pathname.includes(".")) && (!ign.includes(url.pathname)) ) {
         var r = caches.match(location.origin + '/index.html');
         e.respondWith(r);
     } else {
