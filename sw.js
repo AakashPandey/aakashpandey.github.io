@@ -1,6 +1,6 @@
 
-console.log("[UNRELEASED-0.7] SKYROUTES an innovative client side router by Aakash Pandey");
-const vn = "version-07";
+console.log("[SKYROUTES-BETA-0.5]  an innovative client side router by Aakash Pandey");
+const vn = "version-05";
 
 var appCash = [
     '/index.html',
@@ -8,9 +8,6 @@ var appCash = [
     '/lib/skyroute.css',
     '/lib/skyroute.js'
 ];
-
-var ign = ["uijs", "howdy", "dissolve", "skynotes"];
-
 
 self.addEventListener('install', (e) => {
     e.waitUntil(
