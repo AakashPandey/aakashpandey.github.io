@@ -1,0 +1,368 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #414141;
+    font-family: 'Thasadith';
+    /* background: #fdfdfd; */
+    user-select: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+#logo {
+    /* position: relative; */
+    width: 100px;
+    border-radius: 50%;
+    /* margin-top: -65px; */
+    border: solid 2px #41414175;
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+    transition: border 0.3s;
+    cursor: pointer;
+}
+
+#logo:hover {
+    border: solid 1px #fff;
+
+}
+
+header,
+#mast {
+    display: block;
+    margin: 0 auto;
+    padding: 12px;
+    background: rgb(255, 255, 255);
+    color: #383838;
+    /* border: solid 1px #dbdbdb; */
+}
+
+
+header {
+    /* width: 250px; */
+    text-align: center;
+    font-size: 180%;
+    font-family: 'Abel';
+    background: rgb(61, 61, 61);
+    color: #fff;
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+    background-image: url('back2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#mast {
+    height: 400px;
+    min-width: 255px;
+    line-height: 30px;
+    padding: 0;
+
+}
+
+#name,
+#desc {
+    background: #242424b9;
+    width: 250px;
+    margin: 0 auto;
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+
+}
+
+#name {
+    padding-top: 5px;
+}
+
+#desc {
+    font-size: 48%;
+    color: rgba(228, 236, 245, 0.938);
+    padding-bottom: 5px;
+}
+
+#links {
+    display: none;
+    /* font-size: 80%; */
+}
+
+#links a {
+    margin-left: 15px;
+    color: rgb(87, 87, 87);
+    transition: color 0.3s;
+    font-size: 120%;
+}
+
+#dyn {
+    white-space: pre-wrap;
+    height: 110px;
+    padding: 15px;
+    color: rgb(255, 255, 255);
+    color: #fff;
+    background: #6b6b6b;
+    overflow-y: auto;
+    /* text-align: center; */
+}
+
+#home {
+    
+    text-align: center;
+    margin-top: 30px;
+}
+
+#home button {
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2);
+    padding: 15px;
+    width: 280px;
+    /* margin-left: 2px; */
+    margin-top: 20px;
+    background: none;
+    border: none;
+    transition: box-shadow 0.2s, color 0.3s;
+ 
+}
+
+#home p, #contact p {
+    display: inline;
+    font-family: 'Thasadith';
+    font-size: 120%;
+    margin-left: -25px;
+}
+
+#home i {
+    float: left;
+    margin-left: 10px;
+    font-size: 180%;
+    color: rgb(255, 178, 91);
+}
+
+#home button:hover {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+    
+}
+
+button:focus {
+    outline: none;
+}
+
+#blog a {
+    display: block;
+    padding: 20px;
+    color: #6b6b6b;
+    text-decoration: none;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+    margin-bottom: 5px;
+
+    transition: background 0.3s;
+
+}
+
+#blog a:hover {
+    background: #fafafa;
+    color: #464646;
+}
+
+#blog span {
+    display: block;
+    color: rgba(77, 77, 77, 0.692);
+    font-weight: bolder;
+    font-size: 85%;
+}
+
+#contact {
+    padding: 20px;
+}
+
+#contact a {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    background: #ffffff;
+    color: rgb(116, 116, 116);
+    margin-top: 30px;
+    padding: 20px;
+    font-size: 90%;
+    text-decoration: none;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s;
+
+}
+
+#contact a:hover {
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+#r {
+    color: rgb(255, 68, 68);
+}
+#g {
+    color: #25d366;
+}
+#b {
+    color: #00a0dc;
+}
+
+#contact i {
+    font-size: 140%;
+    margin-right: 40px;
+}
+
+#projects div {
+    padding: 20px 20px 30px 20px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+
+#projects b {
+    font-size: 95%;
+    display: block;
+}
+
+#projects p {
+    width: 80%;
+    font-size: 90%;
+}
+
+#projects i, #projects button, #projects a{
+    float: right;
+    font-size: 80%;
+}
+
+#projects i, #projects button, #projects a{
+    margin-left: 60%;
+    margin-top: -30px;
+}
+
+#projects i {
+    color: rgb(96, 192, 160);
+    font-weight: bolder;
+}
+
+#projects button , a{
+    color: rgb(245, 200, 0);
+    background: none;
+    padding: 10px;
+    font-size: 80%;
+    border-radius: 8px;
+    font-family: 'Thasadith';
+    font-weight: bolder;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+#vault {
+    text-align: center;
+}
+
+#vault  p {
+    display: block;
+    margin: 0 auto;
+    margin-top: 200px;
+    font-size: 200%;
+}
+
+@media screen and (min-width: 900px) {
+
+
+    #logo {
+        width: 130px;
+        margin-top: 30px;
+    }
+
+    header {
+        float: left;
+        position: fixed;
+        /* margin-left: 170px; */
+        /* margin-top: 80px; */
+        width: 390px;
+        font-size: 200%;
+        height: 100vh;
+        box-shadow: 0 4px 20px 0 hsla(0, 0%, 0%, 0.2);
+        /* background-image: url('back.jpg'); */
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #name,
+    #desc {
+        width: 100%;
+        padding: 10px;
+        border-radius: 4px;
+    }
+    
+    #name {
+        margin-top: 20px;
+    }
+
+    #desc {
+        font-size: 47%;
+        margin-top: 10px;
+    }
+
+    #mast {
+        /* max-width: 700px; */
+
+        /* margin-top: 80px; */
+        margin-left: 390px;
+        font-size: 120%;
+
+    }
+
+    #links {
+        display: block;
+        margin-top: 40vh;
+        font-size: 70%;
+        bottom: 30px;
+        margin-left: -25px;
+        /* left: 75px; */
+    }
+
+    #links a:hover {
+        color: rgb(255, 255, 255);
+        
+    }
+
+    #dyn {
+        /* background: gray; */
+        padding: 20px;
+        height: 100px;
+    }
+
+    #home button {
+        box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2);
+        padding: 35px;
+        width: 380px;
+        font-size: 90%;
+        margin-top: 30px;
+        background: none;
+        border: none;
+        transition: box-shadow 0.2s, color 0.3s;
+        margin-right: 20px;
+                
+    }
+    
+    #home {
+        padding-top: 80px;
+    }
+
+    #home i {
+        font-size: 210%;
+    }
+
+    #contact {
+        padding-top: 50px;
+    }
+
+    #contact a {
+        padding: 35px;
+        width: 40%;
+    }
+
+    
+
+}
