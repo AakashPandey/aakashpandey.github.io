@@ -108,7 +108,6 @@ header {
 }
 
 #home {
-    
     text-align: center;
     margin-top: 30px;
 }
@@ -311,7 +310,7 @@ button:focus {
 
     #links {
         display: block;
-        margin-top: 40vh;
+        margin-top: 48vh;
         font-size: 70%;
         bottom: 30px;
         margin-left: -25px;
