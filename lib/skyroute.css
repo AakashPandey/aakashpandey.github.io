@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+*:focus {
+    outline: none;
+}
+
+.pg, .pgi {
+    display: none;
+}
+
+@keyframes fade {
+    0%{opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.vis {
+    display: default;
+    animation: fade 0.4s;
+}
+
+#e {
+    margin: 0 auto;
+    margin-top: -220px;
+    text-align: center;
+    padding: 30px;
+    font-family: monospace;
+    font-size: 110%;
+    color: rgba(0, 0, 0, 0.774);   
+    line-height: 30px;
+}
+
+#e a {
+    text-decoration: none;
+    color: rgb(28, 134, 255);
+}
+
+
+#ee {
+    position: absolute;
+    display: none;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 44px;
+    border-radius: 30px 30px 0px 30px;
+    top: 40px;
+    left: 15px;
+    background: rgb(255, 255, 255);
+    font-size: 95%;
+    border: solid 0.5px rgb(196, 255, 235);
+    color: rgb(71, 71, 71);
+
+}
+
+#ee::after {
+    display: block;
+    position: relative;
+    top: 10px;
+    left: 50px;
+    min-width: 65vw;
+    max-width: 80vw;
+    content: 'Please consider updating your browser or enabling JavaScript. This app depends on service workers to provide the best experience.';
+    padding: 15px;
+    line-height: 25px;
+    text-align: left;
+    font-size: 100%;
+    border-radius: 0px 30px 30px 30px;
+    background: rgb(196, 255, 235);
+    color: rgb(54, 54, 54);
+}
