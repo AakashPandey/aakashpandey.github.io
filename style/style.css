@@ -50,7 +50,7 @@ header {
     background: rgb(61, 61, 61);
     color: #fff;
     box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
-    background-image: url('back2.jpg');
+    background-image: url('../assets/back2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 20px;
