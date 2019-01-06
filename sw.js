@@ -1,6 +1,6 @@
 // State management
 
-const vn = "version-x4";
+const vn = "version-v1";
 
 // Files to cache
 var appCash = [
