@@ -1,5 +1,5 @@
 
-console.log("[SKYROUTES-BETA-0.5]  an innovative client side router by Aakash Pandey");
+console.log("[SKYROUTES-BETA-0.5] An innovative client side router by Aakash Pandey");
 const vn = "version-05";
 
 var appCash = [
