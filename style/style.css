@@ -117,7 +117,6 @@ header {
     box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2);
     padding: 15px;
     width: 280px;
-    /* margin-left: 2px; */
     margin-top: 20px;
     background: none;
     border: none;
@@ -141,7 +140,6 @@ header {
 
 #home button:hover {
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
-    
 }
 
 button:focus {
@@ -155,7 +153,7 @@ button:focus {
     text-decoration: none;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
     margin-bottom: 5px;
-
+    font-size: 90%;
     transition: background 0.3s;
 
 }
@@ -169,7 +167,7 @@ button:focus {
     display: block;
     color: rgba(77, 77, 77, 0.692);
     font-weight: bolder;
-    font-size: 85%;
+    font-size: 88%;
 }
 
 #contact {
@@ -225,6 +223,7 @@ button:focus {
 #projects p {
     width: 80%;
     font-size: 90%;
+    line-height: 25px;
 }
 
 #projects i, #projects button, #projects a{
@@ -305,9 +304,6 @@ button:focus {
     }
 
     #mast {
-        /* max-width: 700px; */
-
-        /* margin-top: 80px; */
         margin-left: 390px;
         font-size: 120%;
 
