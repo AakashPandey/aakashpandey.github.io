@@ -1,0 +1,134 @@
+<!--
+    ___         __              __       ____                  __
+   /   | ____ _/ /______ ______/ /_     / __ \____ _____  ____/ /__  __  __
+  / /| |/ __ `/ //_/ __ `/ ___/ __ \   / /_/ / __ `/ __ \/ __  / _ \/ / / /
+ / ___ / /_/ / ,< / /_/ (__  ) / / /  / ____/ /_/ / / / / /_/ /  __/ /_/ /
+/_/  |_\__,_/_/|_|\__,_/____/_/ /_/  /_/    \__,_/_/ /_/\__,_/\___/\__, /
+                                                                  /____/
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#212121" />
+    <title>AP</title>
+    <link href="https://fonts.googleapis.com/css?family=Abel|Thasadith|Roboto" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' href='style.css'>
+    <link rel='stylesheet' type='text/css' href='/fa/css/fa.css'>
+    <link rel='stylesheet' type='text/css' href='/lib/skyroute.css'>
+
+</head>
+
+<body>
+    <section id="sail">
+        <header>
+            <img src="a.png" id="logo" onclick="nav('')"><br>
+            <div id="name">AAKASH PANDEY</div>
+            <div id="desc">Full Stacker • Amateur Blogger • Creative Dev</div>
+            
+            <div id="links">
+                <a href="https://github.com/aakashpandey" class="lk"><i class="fa fa-github" aria-hidden="true"></i></a>
+                <a href="https://instagram.com/_aakashpandey" class="lk"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/_aakashpandey" class="lk"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+        </header>
+    </section>
+    <section id="mast">
+        <div id="dyn"></div>
+        <div id="home" class="pgi">
+            <button onclick="nav('blog')" class="col"><i class="fa fa-newspaper-o" aria-hidden="true"></i>
+                <p>Blog</p>
+            </button>
+            <button onclick="nav('projects')"><i class="fa fa-flask" aria-hidden="true"></i>
+                <p>Projects</p>
+            </button>
+            <button onclick="nav('contact')"><i class="fa fa-address-book" aria-hidden="true"></i>
+                <p>Contact</p>
+            </button>
+            <button onclick="nav('vault')"><i class="fa fa-user-secret" aria-hidden="true"></i>
+                <p>Vault</p>
+            </button>
+        </div>
+
+        <div id="blog" class="pg">
+            <a href="https://medium.com/@_aakashpandey/exploring-service-worker-cache-update-upgrade-i-baed2e812010">
+                <span>Dec 24, 2018 - JavaScript</span> Exploring service worker cache, update, upgrade
+            </a>
+            <a href="https://medium.com/@_aakashpandey/exploring-service-worker-cache-update-upgrade-i-baed2e812010">
+                <span>Dec 24, 2018 - JavaScript</span> Exploring service worker cache, update, upgrade
+            </a>
+            <a href="https://medium.com/@_aakashpandey/exploring-service-worker-cache-update-upgrade-i-baed2e812010">
+                <span>Dec 24, 2018 - JavaScript</span> Exploring service worker cache, update, upgrade
+            </a>
+        </div>
+
+
+
+        <div id="projects" class="pg">
+
+            <div>
+                <b>Howdy</b><i>JavaScript, Social Net</i>
+                <p>Serverless Group chatting solution designed around http relay API</p><a target="_blank" href="https://aakashpandey.github.io/howdy">Try now</a>
+            </div>
+
+            <div>
+                <b>uiJS</b><i>JavaScript, Routing(Legacy)</i>
+                <p>Hash-path based client side router for single page applications</p><a target="_blank" href="https://aakashpandey.github.io/uijs">Try now</a>
+            </div>
+
+            <div>
+                <b>Casper</b><i>JS, Python</i>
+                <p>Chatbot solution with basic client side NLP designed for multiple applications</p><a target="_blank" href="https://aakashpandey.github.io/projects/casper.png">View sample</a>
+            </div>
+
+            <div>
+                <b>Dissolve</b><i>JS, Canvas API</i>
+                <p>Read and write text into pngs, a proof of concept</p><a target="_blank" href="https://aakashpandey.github.io/dissolve">Try now</a>
+            </div>
+    
+
+           
+
+        </div>
+
+
+        <div id="vault" class="pg">
+            <p>Coming soon</p>
+        </div>
+
+        <div id="contact" class="pg">
+            <a href="mailto:aakash.pandey@live.com?Subject=Hi" class="lk"><i id="r" class="fa fa-inbox" aria-hidden="true"></i>
+                <p>Send an email</p>
+            </a>
+            <a href="https://wa.me/7019374399/?text=Hi, just saw your webpage!" class=""><i id="g" class="fa fa-whatsapp"
+                    aria-hidden="true"></i>
+                <p>Say Hi!</p>
+            </a>
+            <a href="https://www.linkedin.com/in/aakash-pandey-a2414a15a/" class=""><i id="b" class="fa fa-linkedin"
+                    aria-hidden="true"></i>
+                <p>Connect</p>
+            </a>
+        </div>
+
+        <div id="gallery" class="pg">
+
+        </div>
+
+
+
+
+
+    </section>
+
+</body>
+<script src="/lib/skyroute.js"></script>
+<script src="/sw.js"></script>
+<script src="/main.js"></script>
+
+
+
+</html>
