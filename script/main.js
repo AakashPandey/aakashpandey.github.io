@@ -51,7 +51,7 @@
         id = "dyn";
         if (irt < str.length) {
             document.getElementById(id).innerHTML = document.getElementById(id).innerHTML + str.charAt(irt);
-            (str.charAt(irt) === "!" || str.charAt(irt) === "," || str.charAt(irt) === "." || str.charAt(irt) === "&") ? TS += 250 : TS = fluc();
+            (str.charAt(irt) === "!" || str.charAt(irt) === "," || str.charAt(irt) === "." || str.charAt(irt) === "&" || str.charAt(irt) === "?") ? TS += 250 : TS = fluc();
             document.getElementById(id).scrollTop = 9000;
             irt++;
             await pause(TS);
