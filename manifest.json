@@ -1,0 +1,17 @@
+{
+  "name": "Aakash Pandey",
+  "short_name": "AP",
+  "icons": [{
+    "src": "/assets/a.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    }, {
+      "src": "/assets/a.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }],
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#fff",
+  "theme_color": "#212121"
+}
