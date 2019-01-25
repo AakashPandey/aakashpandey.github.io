@@ -38,7 +38,7 @@ self.addEventListener('message', (event) => {
 
 self.addEventListener('fetch', e => {
     const url = new URL(e.request.url);
-    if (url.origin === location.origin && (!url.pathname.includes(".")) && (!/howdy|dissolve|uijs|skynotes/.test(url.pathname)) ) {
+    if (url.origin === location.origin && (!url.pathname.includes(".")) && (!/howdy|dissolve|uijs|skynotes|leafapp|skyroutes/.test(url.pathname)) ) {
         var r = caches.match(location.origin + '/index.html');
         e.respondWith(r);
     } else {
