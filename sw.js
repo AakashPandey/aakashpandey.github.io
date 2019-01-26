@@ -1,11 +1,15 @@
 console.log("[SKYROUTES-BETA-0.5] An innovative client side router by Aakash Pandey");
 const vn = "version-legacy1";
-const chg = "hmmmmm";
+const chg = "hmm";
 
 var appCash = [
     '/index.html',
     '/lib/skyroute.css',
-    '/lib/skyroute.js'
+    '/lib/skyroute.js',
+    '/assets/back2.jpg',
+    '/assets/a.png',
+    '/style/style.css',
+    '/script/main.js'
 ];
 
 self.addEventListener('install', (e) => {
