@@ -1,6 +1,6 @@
 console.log("[SKYROUTES-BETA-0.5] An innovative client side router by Aakash Pandey");
-const vn = "legacy";
-const chg = "pre";
+const vn = "legacy1";
+const chg = "pre-pretty-old-lazy";
 
 var appCash = [
     '/index.html',
