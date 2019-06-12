@@ -1,6 +1,6 @@
 console.log("[SKYROUTES-BETA-0.5] An innovative client side router by Aakash Pandey");
 const vn = "legacyl1";
-const chg = "pre-pretty-old-new";
+const chg = "pre-time-for-a-change";
 
 var appCash = [
     '/index.html',
@@ -42,7 +42,7 @@ self.addEventListener('message', (event) => {
 
 self.addEventListener('fetch', e => {
     const url = new URL(e.request.url);
-    if (url.origin === location.origin && (!url.pathname.includes(".")) && (!/howdy|dissolve|uijs|skynotes|leafapp|skyroutes|greetings/.test(url.pathname)) ) {
+    if (url.origin === location.origin && (!url.pathname.includes(".")) && (!/howdy|dissolve|uijs|skynotes|leafapp|skyroutes|greetings|MME/.test(url.pathname)) ) {
         var r = caches.match(location.origin + '/index.html');
         e.respondWith(r);
     } else {
