@@ -9,7 +9,12 @@ var appCash = [
     '/assets/back2.jpg',
     '/assets/a.png',
     '/style/style.css',
-    '/script/main.js'
+    '/script/main.js',
+    '/style/fa/fonts/fontawesome-webfont.woff2?v=4.7.0',
+    'https://fonts.gstatic.com/s/thasadith/v3/mtG44_1TIqPYrd_f5R1ot0MV.woff2',
+    'https://fonts.gstatic.com/s/abel/v10/MwQ5bhbm2POE2V9BPQ.woff2',
+    'https://fonts.googleapis.com/css?family=Abel|Thasadith|Roboto'
+
 ];
 
 self.addEventListener('install', (e) => {
