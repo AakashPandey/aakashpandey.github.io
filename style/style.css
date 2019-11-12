@@ -69,7 +69,7 @@ header {
 
 #name,
 #desc {
-    background: #242424b9;
+    background: #151515;
     width: 250px;
     margin: 0 auto;
     box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
@@ -104,7 +104,7 @@ header {
     padding: 15px;
     color: rgb(255, 255, 255);
     color: #fff;
-    background: #6b6b6b;
+    background: #151515;
     overflow-y: auto;
     /* text-align: center; */
 }
@@ -136,7 +136,7 @@ header {
     float: left;
     margin-left: 10px;
     font-size: 180%;
-    color: rgb(255, 178, 91);
+    color: rgb(255, 130, 67);
 }
 
 #home button:hover {
@@ -175,7 +175,7 @@ button:focus {
     padding: 20px;
 }
 
-#contact a {
+#contact a, #vault a {
     display: block;
     margin: 0 auto;
     width: 70%;
@@ -211,8 +211,8 @@ button:focus {
 
 #projects div {
     padding: 20px 20px 30px 20px;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
-    margin-bottom: 5px;
+    /* box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2); */
+    margin-bottom: 10px;
     border-radius: 4px;
 }
 
@@ -259,12 +259,13 @@ button:focus {
     text-align: center;
 }
 
+/*
 #vault  p {
     display: block;
     margin: 0 auto;
     margin-top: 200px;
     font-size: 200%;
-}
+} */
 
 @media screen and (min-width: 900px) {
 
