@@ -88,12 +88,11 @@ header {
 
 #links {
     display: none;
-    /* font-size: 80%; */
 }
 
 #links a {
     margin-left: 15px;
-    color: rgb(87, 87, 87);
+    color: #f7f7f7
     transition: color 0.3s;
     font-size: 120%;
 }
@@ -313,7 +312,7 @@ button:focus {
 
     #links {
         display: block;
-        margin-top: 48vh;
+        margin-top: 47vh;
         font-size: 70%;
         bottom: 30px;
         margin-left: -25px;
