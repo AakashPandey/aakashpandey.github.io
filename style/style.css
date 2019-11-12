@@ -92,7 +92,7 @@ header {
 
 #links a {
     margin-left: 15px;
-    color: #f7f7f7
+    color: #f7f7f7;
     transition: color 0.3s;
     font-size: 120%;
 }
